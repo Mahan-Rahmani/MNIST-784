@@ -23,7 +23,8 @@ model = make_pipeline(
     LogisticRegression(
         max_iter=200,
         n_jobs=-1,
-        multi_class="auto"
+        C=0.5,
+        solver="saga"
     )
 )
 
